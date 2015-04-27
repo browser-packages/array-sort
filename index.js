@@ -19,13 +19,17 @@ function sort ( arr, fn ){
 
 module.exports = sort;
 
+sort.contexted = function ( fn ) {
+    return sort( this, fn );
+};
+
 sort.prototify = function () {
-    if ( Array.prototype.sort === sort ) {
+    if ( Array.prototype.sort === sort.contexted ) {
         return false;
     }
 
     Array.prototype.nativeSort = Array.prototype.sort;
-    Array.prototype.sort = sort;
+    Array.prototype.sort = sort.contexted;
 
     return true;
 };
