@@ -1,0 +1,29 @@
+{
+  "name": "browser-packages",
+  "version": "0.0.0",
+  "description": "Browser-side packages that can be used by requirehit or browserify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/browser-packages"
+  },
+  "author": "Gabriel Conceição <gabriel.conceicao@findhit.com>",
+  "license": "GPL v3",
+  "contributors": [
+  	{
+  		"name": "Gabriel Conceição",
+  		"email": "gabriel.conceicao@findhit.com"
+  	},
+  	{
+  		"name": "José Moreira",
+  		"email": "jose.moreira@findhit.com"
+  	},
+  	{
+  		"name": "Hugo Passo",
+  		"email": "hugo.passo@findhit.com"
+  	}
+  ]
+}
