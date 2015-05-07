@@ -1,19 +1,23 @@
-function sort ( arr, fn ){
+function sort ( arr, fn ) {
     if( arr.length <= 1 ) return arr;
-    if( !fn ) var fn = function(){
-        return Math.floor(( Math.random() * arr.length ) + 0 );
+    if( !fn ) fn = function( a, b ){
+        return a < b;
     }
 
-    for( var i = 0; i < ( arr.length - 1 ); i++ ){
-        var res = parseInt( fn( arr[ i ], arr[ i + 1 ] ) ),
-            arrEntry = undefined;
+    for( var i = 0; i < arr.length; i++ ){
+        for( var s = 0; s < ( arr.length - 1 ); s++ ){
+            var fnRes = fn( arr[ s ], arr[ s + 1 ] ),
+                res = typeof fnRes == 'boolean' && fnRes || parseInt( fn( arr[ s ], arr[ s + 1 ] ) ),
+                arrEntry = undefined;
 
-        if( res && ( i + ( res ) ) >= 0 && ( i + ( res ) ) < arr.length && fn( arr[ i ], arr[ i + ( res ) ] ) ){
-            arrEntry = arr[ i + ( res ) ];
-            arr[ i + ( res ) ] = arr[ i ];
-            arr[ i ] = arrEntry;
+            if( res && res > 0 ){
+                arrEntry = arr[ s + 1 ];
+                arr[ s + 1 ] = arr[ s ];
+                arr[ s ] = arrEntry;
+            }
         }
     }
+
     return arr;
 };
 
