@@ -7,7 +7,7 @@ bp-array-sort is a failover implemenations for faulty Array.prototype.sort metho
 
 ## Installation
 
-We use [requirehit](http://github.com/requirehit) for loading it into the browser, but you should be able to use it with other browser module manager.
+We use [requirehit](http://github.com/requirehit) for loading it into the browser, but you should be able to use it with others browser module managers.
 
 To use on `nodejs`:
 
@@ -37,7 +37,7 @@ var myArray = [ 3, 6, 2, 5, 7, 4, 9, 8 ];
 myArray.sort();
 ```
 
-It also behaves as engine's native method, that means that you could provide a `function` to run on each iteration:
+It also has exacly the same behaviors as engine's native method, meaning that you could provide a `function` to run on each iteration:
 ```js
 require( 'bp-array-sort' ).prototify();
 
