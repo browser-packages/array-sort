@@ -1,6 +1,6 @@
 {
   "name": "browser-packages",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Browser-side packages that can be used by requirehit or browserify",
   "main": "index.js",
   "scripts": {
