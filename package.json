@@ -1,14 +1,14 @@
 {
-  "name": "browser-packages",
+  "name": "bp-array-sort",
   "version": "0.1.0",
-  "description": "Browser-side packages that can be used by requirehit or browserify",
+  "description": "bp-array-sort is a failover implemenations for faulty Array.prototype.sort method browser's implementation",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/jshint/bin/jshint . && node_modules/mocha/bin/mocha --globals setImmediate,clearImmediate --check-leaks --colors -t 10000 --reporter spec $(find test/* -name '*.test.js')"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/browser-packages"
+    "url": "https://github.com/browser-packages/array-sort.git"
   },
   "author": "Gabriel Conceição <gabriel.conceicao@findhit.com>",
   "license": "GPL v3",
