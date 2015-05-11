@@ -4,7 +4,7 @@
   "description": "Browser-side packages that can be used by requirehit or browserify",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/jshint/bin/jshint . && node_modules/mocha/bin/mocha --globals setImmediate,clearImmediate --check-leaks --colors -t 10000 --reporter spec $(find test/* -name '*.test.js')"
   },
   "repository": {
     "type": "git",
@@ -13,17 +13,22 @@
   "author": "Gabriel Conceição <gabriel.conceicao@findhit.com>",
   "license": "GPL v3",
   "contributors": [
-  	{
-  		"name": "Gabriel Conceição",
-  		"email": "gabriel.conceicao@findhit.com"
-  	},
-  	{
-  		"name": "José Moreira",
-  		"email": "jose.moreira@findhit.com"
-  	},
-  	{
-  		"name": "Hugo Passo",
-  		"email": "hugo.passo@findhit.com"
-  	}
-  ]
+    {
+      "name": "Gabriel Conceição",
+      "email": "gabriel.conceicao@findhit.com"
+    },
+    {
+      "name": "José Moreira",
+      "email": "jose.moreira@findhit.com"
+    },
+    {
+      "name": "Hugo Passo",
+      "email": "hugo.passo@findhit.com"
+    }
+  ],
+  "devDependencies": {
+    "chai": "2.3.0",
+    "mocha": "2.2.4",
+    "jshint": "2.7.0"
+  }
 }
