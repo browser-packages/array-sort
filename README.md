@@ -5,8 +5,6 @@
 
 bp-array-sort is a failover implemenations for faulty Array.prototype.sort method browser's implementation
 
-###### Stage: **work in progress**
-
 
 ## Installation
 
