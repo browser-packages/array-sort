@@ -1,5 +1,8 @@
 # bp-array-sort
 
+[![Test Status](http://strider.findhit.com/browser-packages/array-sort/badge)](http://strider.findhit.com/browser-packages/array-sort) [![Dependency Status](https://david-dm.org/browser-packages/array-sort.svg)](https://david-dm.org/browser-packages/array-sort)
+
+
 bp-array-sort is a failover implemenations for faulty Array.prototype.sort method browser's implementation
 
 ###### Stage: **work in progress**
